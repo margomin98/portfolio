@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #fffaf7 !important;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -2173,6 +2173,7 @@ input[type=time].form-control,
 input[type=datetime-local].form-control,
 input[type=month].form-control {
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 
@@ -4196,6 +4197,7 @@ input[type=button].btn-block {
   border: 2px solid #916000;
   border-radius: 0;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 .custom-select:focus {
@@ -4308,6 +4310,7 @@ input[type=button].btn-block {
   padding: 0;
   background-color: transparent;
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 .custom-range:focus {
@@ -4363,7 +4366,8 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
@@ -8311,6 +8315,7 @@ button.bg-white:focus {
 }
 
 .position-sticky {
+  position: -webkit-sticky !important;
   position: sticky !important;
 }
 
@@ -8330,8 +8335,9 @@ button.bg-white:focus {
   z-index: 1030;
 }
 
-@supports (position: sticky) {
+@supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
@@ -14970,4 +14976,17 @@ h3 {
 }
 .personal {
   width: 1000px;
+}
+
+.copyright {
+  color: #BD6D3A;
+}
+
+.section {
+  color: #BD6D3A;
+}
+
+.card-group, .img {
+  height: auto;
+  width: 500px;
 }
