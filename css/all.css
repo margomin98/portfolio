@@ -69,7 +69,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color:#fffaf7 !important;
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -14986,10 +14986,38 @@ h3 {
   color: #BD6D3A;
 }
 
+.card-title {
+  color: brown;
+  text-align: center;
+  padding-top: 50px;
+}
+
 .card-text {
   color: brown;
+  text-align: center;
+  size: 5px;
 }
 
 .card-deck {
-  padding: 30px 30px 0px;
+  padding-bottom: 50px;
+}
+
+.card-deck, .img {
+  width: 600px;
+  height: 380px;
+}
+
+.button {
+  width: 140px;
+  background-color: #f3db9b;
+  border: none;
+}
+
+.contact {
+  padding-right: 150px;
+}
+
+.form {
+  display: flex;
+  flex-direction: reverse;
 }

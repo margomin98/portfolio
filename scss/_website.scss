@@ -1,9 +1,20 @@
-
+.card-title{
+    color:brown;
+    text-align: center;
+    padding-top: 50px;
+}
 .card-text{
     color:brown;
+    text-align: center;
+    size: 5px;
 }
 
 .card-deck{
-    padding:30px 30px 0px;
-  
+    padding-bottom: 50px;
 }
+.card-deck,.img{
+
+    width: 600px;
+    height: 380px;
+}
+
